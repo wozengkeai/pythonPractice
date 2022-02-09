@@ -1,12 +1,12 @@
 基于python3的学习练习记录
 
-##Custom_module  自定义安装包到site-packages
+## ustom_module  自定义安装包到site-packages
 模块就是将一个或多个函数保存在文件中
 前提条件：
 1、创建一个mymodules的文件夹
 2、有一份你的函数所在的py文件（我这里命名为vsearch.py）
 
-####使用‘setuptools’将模块安装到site-packages中需要以下3个步骤：
+#### 使用‘setuptools’将模块安装到site-packages中需要以下3个步骤：
 ①第一步创建一个发布描述，必须有一个名为setup.py的文件
 ```
 #from setup.py
@@ -30,7 +30,6 @@ py -3 setup.py sdist
 ![image.png](https://upload-images.jianshu.io/upload_images/23087403-6f4497442b487bfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 removing 'vsearch-1.0' (and everything under it)看到这个消息表示发布成功，vsearch-1.0这是一个可安装文件里面包含了你的源代码，mymodules目录下多了两个文件
-![image.png](https://upload-images.jianshu.io/upload_images/23087403-80c6799f4c540e50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ③安装发布文件
@@ -47,7 +46,7 @@ import vsearch
 注意：如果后续决定更新某个模块的代码，按照前面3个步骤重新安装到site-packages，但是要在setup.py文件中指定一个新的版本。
 
 
-##webapp 通过flask框架快速了解一个web应用，文件的存储与管理
+## webapp 通过flask框架快速了解一个web应用，文件的存储与管理
 "__name__"：指出了当前活动的命名空间。
 
 open的各个模式：
