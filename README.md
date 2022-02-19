@@ -1,4 +1,7 @@
 基于python3的学习练习记录
+## questions
+常见的python算法题
+
 
 ## ustom_module  自定义安装包到site-packages
 模块就是将一个或多个函数保存在文件中
